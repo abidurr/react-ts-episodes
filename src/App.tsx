@@ -15,9 +15,12 @@ export default function App(props:any): JSX.Element {
           <h1>Rick and Morty</h1>
           <p>Pick your favorite episode</p>
         </div>
-        <div>
+        <div style={{}}>
+          <h2>
           <Link to="/">Home</Link>
-          <Link to="/faves">{state.favorites.length} episode(s) favorited.</Link>
+          {"   "}
+          <Link to="/faves"> Favorites ({state.favorites.length})</Link>
+          </h2>
         </div>
       </header>
       {props.children}
