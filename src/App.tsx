@@ -3,8 +3,6 @@ import { Store } from "./Store";
 
 import { Link } from "@reach/router";
 
-const EpisodeList = React.lazy<any>(() => import("./EpisodesList"));
-
 export default function App(props:any): JSX.Element {
   const { state } = React.useContext(Store);
 
